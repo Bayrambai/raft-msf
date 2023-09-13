@@ -1,4 +1,4 @@
-# Self-Supervised Monocular Scene Flow Estimation
+# RAFT-MSF
 
 This repository is the official PyTorch implementation of the paper:  
 
