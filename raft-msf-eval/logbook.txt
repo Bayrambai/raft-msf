@@ -1,0 +1,317 @@
+[2023-09-13 22:18:19] ==> Commandline Arguments
+[2023-09-13 22:18:19]   batch_size: 1
+[2023-09-13 22:18:19]   batch_size_val: 1
+[2023-09-13 22:18:19]   checkpoint: ./ckpt/raft_msf.ckpt
+[2023-09-13 22:18:19]   checkpoint_exclude_params: ['']
+[2023-09-13 22:18:19]   checkpoint_include_params: ['*']
+[2023-09-13 22:18:19]   checkpoint_mode: resume_from_latest
+[2023-09-13 22:18:19]   correlation_cuda_enabled: True
+[2023-09-13 22:18:19]   cuda: True
+[2023-09-13 22:18:19]   device: cuda
+[2023-09-13 22:18:19]   dist_url: env://
+[2023-09-13 22:18:19]   evaluation: True
+[2023-09-13 22:18:19]   finetuning: False
+[2023-09-13 22:18:19]   gamma: 0.8
+[2023-09-13 22:18:19]   iters: 10
+[2023-09-13 22:18:19]   lr_scheduler: None
+[2023-09-13 22:18:19]   mixed_precision: False
+[2023-09-13 22:18:19]   model: MonoSceneFlow_fullmodel
+[2023-09-13 22:18:19]   num_workers: 4
+[2023-09-13 22:18:19]   optimizer: Adam
+[2023-09-13 22:18:19]   optimizer_amsgrad: False
+[2023-09-13 22:18:19]   optimizer_betas: (0.9, 0.999)
+[2023-09-13 22:18:19]   optimizer_eps: 1e-08
+[2023-09-13 22:18:19]   optimizer_group: None
+[2023-09-13 22:18:19]   optimizer_lr: 0.001
+[2023-09-13 22:18:19]   optimizer_weight_decay: 0
+[2023-09-13 22:18:19]   save: ./raft-msf-eval
+[2023-09-13 22:18:19]   save_disp: False
+[2023-09-13 22:18:19]   save_disp2: False
+[2023-09-13 22:18:19]   save_flow: False
+[2023-09-13 22:18:19]   seed: 1
+[2023-09-13 22:18:19]   small: False
+[2023-09-13 22:18:19]   start_epoch: 1
+[2023-09-13 22:18:19]   tbIter: 10
+[2023-09-13 22:18:19]   total_epochs: 1
+[2023-09-13 22:18:19]   training_augmentation: None
+[2023-09-13 22:18:19]   training_dataset: None
+[2023-09-13 22:18:19]   training_loss: None
+[2023-09-13 22:18:19]   validation_augmentation: Augmentation_Resize_Only
+[2023-09-13 22:18:19]   validation_augmentation_imgsize: [256, 832]
+[2023-09-13 22:18:19]   validation_augmentation_photometric: False
+[2023-09-13 22:18:19]   validation_dataset: KITTI_2015_Train_Full_mnsf
+[2023-09-13 22:18:19]   validation_dataset_crop_size: [370, 1224]
+[2023-09-13 22:18:19]   validation_dataset_preprocessing_crop: False
+[2023-09-13 22:18:19]   validation_dataset_root: /data/datasets/deep_vision_group/kitt15_sf/
+[2023-09-13 22:18:19]   validation_key: sf
+[2023-09-13 22:18:19]   validation_key_minimize: True
+[2023-09-13 22:18:19]   validation_loss: Eval_SceneFlow_KITTI_Train
+[2023-09-13 22:18:19]   world_size: 1
+[2023-09-13 22:18:19] ==> Random Seeds
+[2023-09-13 22:18:19]   Python seed: 1
+[2023-09-13 22:18:19]   Numpy seed: 2
+[2023-09-13 22:18:19]   Torch CPU seed: 3
+[2023-09-13 22:18:19]   Torch CUDA seed: 4
+[2023-09-13 22:18:19] ==> Datasets
+[2023-09-13 22:18:19]   Validation Dataset: KITTI_2015_Train_Full_mnsf
+[2023-09-13 22:18:21]     input_k_l1: [3, 3]
+[2023-09-13 22:18:21]     input_k_l2: [3, 3]
+[2023-09-13 22:18:21]     input_k_r1: [3, 3]
+[2023-09-13 22:18:21]     input_k_r2: [3, 3]
+[2023-09-13 22:18:21]     input_l1: [3, 375, 1242]
+[2023-09-13 22:18:21]     input_l2: [3, 375, 1242]
+[2023-09-13 22:18:21]     input_r1: [3, 375, 1242]
+[2023-09-13 22:18:21]     input_r2: [3, 375, 1242]
+[2023-09-13 22:18:21]     input_size: [2]
+[2023-09-13 22:18:21]     target_disp: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp2_mask_noc: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp2_mask_occ: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp2_noc: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp2_occ: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp_mask: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp_mask_noc: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_disp_noc: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_flow: [2, 375, 1242]
+[2023-09-13 22:18:21]     target_flow_mask: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_flow_mask_noc: [1, 375, 1242]
+[2023-09-13 22:18:21]     target_flow_noc: [2, 375, 1242]
+[2023-09-13 22:18:21]     num_examples: 200
+[2023-09-13 22:18:21] ==> Runtime Augmentations
+[2023-09-13 22:18:21]   training_augmentation: None
+[2023-09-13 22:18:21]   validation_augmentation: Augmentation_Resize_Only
+[2023-09-13 22:18:21]     imgsize: [256, 832]
+[2023-09-13 22:18:21]     photometric: False
+[2023-09-13 22:18:21] ==> Model and Loss
+[2023-09-13 22:18:24]   Batch Size: 1
+[2023-09-13 22:18:24]   GPGPU: Cuda
+[2023-09-13 22:18:24]   Network: MonoSceneFlow_fullmodel
+[2023-09-13 22:18:24]   Number of parameters: 6042370
+[2023-09-13 22:18:24]   Validation Key: sf
+[2023-09-13 22:18:24]   Validation Loss: Eval_SceneFlow_KITTI_Train
+[2023-09-13 22:18:24] ==> Checkpoint
+[2023-09-13 22:18:25]     Restore keys:
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.1.running_var
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.0.downsample.0.bias
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convq1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.conv1.weight
+[2023-09-13 22:18:25]       _model.module.fnet.conv1.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.1.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm2.running_mean
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.0.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.conv2.weight
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convr1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm3.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.0.weight
+[2023-09-13 22:18:25]       _model.module.update_block.mask.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm3.running_mean
+[2023-09-13 22:18:25]       _model.module.update_block.mask.0.weight
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convf1.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.1.conv1.bias
+[2023-09-13 22:18:25]       _model.module.sf_head.1.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm2.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.0.conv2.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_sf.2.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.1.running_mean
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.1.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convr2.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.1.conv1.weight
+[2023-09-13 22:18:25]       _model.module.fnet.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.conv1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.conv.weight
+[2023-09-13 22:18:25]       _model.module.sf_head.0.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm3.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.0.downsample.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm2.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convc1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convf1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convr1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.conv2.weight
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convq2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm1.weight
+[2023-09-13 22:18:25]       _model.module.disp_head.0.0.weight
+[2023-09-13 22:18:25]       _model.module.update_block.conv_sf.2.0.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convf2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.1.conv2.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.0.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm2.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm3.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.disp_head.1.0.weight
+[2023-09-13 22:18:25]       _model.module.update_block.conv_sf.1.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_sf.0.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm1.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.0.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.1.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.conv_d1.1.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm2.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.norm1.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.1.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm2.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convd1.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.1.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.conv1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convc1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convsf2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.conv2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.0.downsample.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm2.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.0.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.1.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm2.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.1.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.conv2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.0.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm3.running_var
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.0.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.conv1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_d1.0.0.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_sf.0.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm2.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm2.running_mean
+[2023-09-13 22:18:25]       _model.module.sf_head.1.0.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_d1.2.0.bias
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convr2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.conv1.weight
+[2023-09-13 22:18:25]       _model.module.fnet.conv2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.conv2.weight
+[2023-09-13 22:18:25]       _model.module.update_block.mask.2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm3.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convc2.bias
+[2023-09-13 22:18:25]       _model.module.disp_head.0.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm3.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm2.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm2.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm3.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convd2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm2.weight
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convz1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.downsample.0.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_d1.1.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.0.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.0.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm2.running_var
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convd1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convd2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.norm1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convz2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.conv_d1.0.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.conv1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.conv_sf.1.0.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.1.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm3.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm2.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.sf_head.0.0.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.0.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convz1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convq1.bias
+[2023-09-13 22:18:25]       _model.module.update_block.mask.2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.0.conv2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer2.0.downsample.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.disp_head.1.0.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm2.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convsf1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm2.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convz2.weight
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.0.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.conv1.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.norm1.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm2.bias
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.1.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.conv1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.conv2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.1.norm1.running_var
+[2023-09-13 22:18:25]       _model.module.fnet.layer1.0.conv2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm2.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.update_block.conv_d1.2.0.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm2.running_var
+[2023-09-13 22:18:25]       _model.module.cnet.norm1.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.0.norm2.num_batches_tracked
+[2023-09-13 22:18:25]       _model.module.fnet.layer3.1.conv1.weight
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convc2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.norm2.running_var
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convsf2.weight
+[2023-09-13 22:18:25]       _model.module.update_block.gru.convq2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer3.0.downsample.1.running_mean
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.conv2.weight
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.conv.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convsf1.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer1.1.conv2.bias
+[2023-09-13 22:18:25]       _model.module.update_block.encoder.convf2.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm3.weight
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.1.norm2.bias
+[2023-09-13 22:18:25]       _model.module.cnet.layer2.0.norm2.running_mean
+[2023-09-13 22:18:25] ==> Save Directory
+[2023-09-13 22:18:25]   Save directory: ./raft-msf-eval
+[2023-09-13 22:18:25] ==> Optimizer
+[2023-09-13 22:18:25]   Adam
+[2023-09-13 22:18:25]   amsgrad: False
+[2023-09-13 22:18:25]   betas: (0.9, 0.999)
+[2023-09-13 22:18:25]   eps: 1e-08
+[2023-09-13 22:18:25]   lr: 0.001
+[2023-09-13 22:18:25]   weight_decay: 0
+[2023-09-13 22:18:25] ==> Learning Rate Scheduler
+[2023-09-13 22:18:25]   class: None
+[2023-09-13 22:18:25] ==> Runtime
+[2023-09-13 22:18:25]   start_epoch: 1
+[2023-09-13 22:18:25]   total_epochs: 1
+[2023-09-13 22:18:25] 
+[2023-09-13 22:18:25] ==> Epoch 1/1
+[2023-09-13 22:18:25]   lr: 0.001
+[2023-09-13 22:19:49] ==> Validate: 100%|########################################################################|  200/200  01:24<00:00  2.36it/s  d1=0.1821, d2=0.2353, d_abs=0.0823, d_sq=0.7307, f1=0.1747, f_epe=9.3247, sf=0.3085
+[2023-09-13 22:19:49] ==> Progress:   0%|                                                                                                                                                     |  0/1  01:24<? ?s/ep  best_sf_avg=0.3085
+[2023-09-13 22:19:49] 
+[2023-09-13 22:19:49] ==> Progress: 100%|#############################################################################################################################################|  1/1  01:24<00:00 84.78s/ep  best_sf_avg=0.3085
+[2023-09-13 22:19:49] Finished.
