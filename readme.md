@@ -3,7 +3,7 @@
 This repository is the official PyTorch implementation of the paper:  
 
 &nbsp;&nbsp;&nbsp;[**RAFT-MSF: Self-Supervised Monocular Scene Flow Using Recurrent Optimizer**](https://link.springer.com/article/10.1007/s11263-023-01828-4)  
-&nbsp;&nbsp;&nbsp;[Bayram Bayramli] [Junhwa Hur](https://hurjunhwa.github.io) and [Lu Hongtao]
+&nbsp;&nbsp;&nbsp; Bayram Bayramli [Junhwa Hur](https://hurjunhwa.github.io) and Lu Hongtao
 
 - Contact: bayram.xiaolong[at]gmail.com  
 
@@ -12,11 +12,11 @@ For installation and configuring dataset please refer to [Self-Supervised Monocu
 
 ## Training and Inference
 
-**For training**, you can simply run the following script files:
+**For training**, you can simply run the following script file:
 
 `./train_monosf_selfsup_kitti_raw.sh`
 
-**For evaluation the pretrained models**, you can simply run the following script file:
+**For evaluation the pretrained model (RAFT-MSF)**, you can simply run the following script file:
 
 `./eval_monosf_selfsup_kitti_train.sh`
 
